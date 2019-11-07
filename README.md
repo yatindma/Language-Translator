@@ -16,6 +16,28 @@ Used Encoder and Decoder to translate.
 
 Here in this we usign multiple LSTM layers.
 
-<img src="model.jpg" alt="Model">
-  
+<img src="model.png" alt="Model">
 
+here we used bi-birectional LSTM for encoding
+
+<h3> Inference </h3>
+
+and for inference we are making another model using the outputs and cell stated from the previous models
+<br><br>
+here we are having the encoder model
+<img src="inversion_encoder_model.png" alt="inversion_encoder_model">
+<br><br>
+Here we are having the decoder model which will predict the output 
+<img src="inversion_decoder_model.png" alt="inversion_decoder_model">
+ 
+What we are gonna do is simply:
+we took one encoder layer and gave them the states and weights from the previous layer so it'll be like already trained layer.
+and from <b> encoder layer we'll predict the cell states (h and c) </b>
+
+and will pass this h & c and tokenized french words to the decoder layer to predict 
+
+again decoder layer will predict the cell state and decoder output which will contain the tokenized matrix
+From the matrix we'll reverse_tokenize the senetence and Will get the predicted output
+
+
+And from the above layer we'll take the output from the encoder 
