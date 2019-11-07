@@ -1,4 +1,4 @@
-# Language-Translation
+# Language-Translation using Bi-Directional LSTM
 
 Here I am using seq2seq Neural network.
 
