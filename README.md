@@ -24,10 +24,13 @@ here we used bi-birectional LSTM for encoding
 
 and for inference we are making another model using the outputs and cell stated from the previous models
 <br><br>
-here we are having the encoder model
+<b>here we are having the encoder model</b>
+<br>
+<br>
 <img src="inversion_encoder_model.png" alt="inversion_encoder_model">
+
 <br><br>
-Here we are having the decoder model which will predict the output 
+<b>Here we are having the decoder model which will predict the output </b>
 <img src="inversion_decoder_model.png" alt="inversion_decoder_model">
  
 What we are gonna do is simply:
