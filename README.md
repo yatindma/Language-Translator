@@ -1,5 +1,6 @@
 # Language-Translation using Bi-Directional LSTM
 
+Read more at https://medium.com/@SpielmitDaten/machine-translation-using-seq2seq-model-aedcc03f967b
 Here I am using seq2seq Neural network.
 
 Steps:
